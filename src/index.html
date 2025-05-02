@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hello World!</title>
+    <canvas class="webgl"></canvas>
     <link rel="stylesheet" href="index.css" />
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.154.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type = "module" src = "script.js"></script>
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
   </body>
 </html>
